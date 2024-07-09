@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Engineer - Sergi García Jiménez</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-gray-700 sticky top-0 z-40">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center">
+              <!-- <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Your Company"
+              /> -->
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="#perfil-profesional"
+                  class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Perfil profesional</a
+                >
+                <a
+                  href="#experiencia-profesional"
+                  class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Experiencia profesional</a
+                >
+                <a
+                  href="#tecnologias"
+                  class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Tecnologias</a
+                >
+                <a
+                  href="#proyectos"
+                  class="uppercase text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Proyectos</a
+                >
+                <!-- <a
+                  href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Calendar</a
+                > -->
+              </div>
+            </div>
+          </div>
+          <span
+            class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+          >
+            <a
+              class="ml-3 text-gray-100"
+              href="https://www.linkedin.com/in/sergi-garcía-jiménez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-5 h-5"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.75 20h-3.5v-11h3.5v11zm-1.75-12.268c-1.151 0-2.082-.934-2.082-2.082 0-1.147.932-2.082 2.082-2.082s2.082.935 2.082 2.082c0 1.148-.932 2.082-2.082 2.082zm13.75 12.268h-3.5v-5.5c0-1.308-.026-2.992-1.825-2.992-1.826 0-2.104 1.432-2.104 2.908v5.584h-3.5v-11h3.361v1.507h.048c.469-.889 1.613-1.825 3.321-1.825 3.551 0 4.204 2.34 4.204 5.382v6.936z"
+                />
+              </svg>
+            </a>
+            <a
+              class="ml-3 text-gray-100"
+              href="https://www.github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-5 h-5"
+              >
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.091-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.398 3.005-.403 1.022.005 2.048.137 3.006.403 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.803 5.625-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.896-.014 3.292 0 .322.218.694.825.576 4.765-1.587 8.2-6.085 8.2-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            >Calendar</a
+          >
+        </div>
+      </div>
+    </nav>
+    <section id="perfil-profesional" class="text-gray-600 body-font">
+      <div class="container px-5 py-10 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+          <div class="flex flex-col sm:flex-row mt-10">
+            <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+              <div
+                class="w-40 h-40 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400"
+              >
+                <img class="rounded-full" src="img/CV-FOTO.jpeg" />
+              </div>
+              <div
+                class="flex flex-col items-center text-center justify-center"
+              >
+                <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
+                  Sergi García jiménez
+                </h2>
+                <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                <p class="text-base">
+                  Graduado en Ingeniería Informática y Servicios. Poseo 3 años
+                  de experiencia como desarrollador FullStack y 1 año de
+                  experiencia en Business Intelligence.
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-400 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left"
+            >
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-2xl">
+                Formación profesional
+              </h2>
+              <div class="w-30 h-1 bg-indigo-600 rounded mt-2 mb-4"></div>
+              <p class="leading-relaxed text-lg text-black-900 mb-4">
+                <span class="font-bold mt-10"
+                  >GRADO en Ingeniería Informática y Servicios. EU GIMBERNAT –
+                  UAB Sant Cugat del Vallès.</span
+                >
+              </p>
+              <p>
+                <span class="font-bold">- Trabajo final de grado:</span>
+                Análisis funcional, diseño e implementación de un Ecommerce B2C
+                de pelotas de baloncesto, utilizando: UML, Symfony, plantillas
+                TWIG, Bootstrap, jQuery, Docker, PostgreSQL, entre otras.
+              </p>
+              <p class="leading-relaxed text-lg text-black-900 my-4">
+                <span class="font-bold"
+                  >CFGS en Administración de Sistemas Informáticos en Red
+                  (ASIX). LaSalle Manlleu.</span
+                >
+              </p>
+              <p class="my-4">
+                <span class="font-bold">- Trabajo final de ciclo:</span>
+                Página web de estadísticas de baloncesto para entrenadores de
+                baloncesto. Desarrollada con: HTML5, CSS3, JAVASCRIPT, PHP, SQL
+                y base de datos MySQl.
+              </p>
+
+              <!-- <a class="text-indigo-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tecnologias" class="bg-gray-100 text-gray-600 body-font">
+      <div class="container p-5 sm:px-40 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+            >
+              Tecnologias destacadas
+            </h1>
+            <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+          </div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+            Esta combinación de habilidades técnicas y conocimientos teóricos me
+            permite contribuir de manera efectiva a proyectos de desarrollo web
+            tanto en FRONTEND como en BACKEND. Busco formar parte de un equipo
+            donde pueda aplicar y expandir estos conocimientos, colaborando para
+            crear soluciones innovadoras y eficientes.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/720x400"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                HTML5
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                FRONTEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/721x401"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">CSS3</h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                FRONTEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/722x402"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                BOOTSTRAP
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                FRONTEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/722x402"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                TAILWIND
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                FRONTEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap pt-2 -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/723x403"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                JAVASCRIPT
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                FRONTEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/720x400"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">JAVA</h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                BACKEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/720x400"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                PYTHON
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                BACKEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/721x401"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">PHP</h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                BACKEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/722x402"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                SYMFONY
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                FULLSTACK
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/722x402"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                PIMCORE
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                FULLSTACK
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/723x403"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                GIT Y GITHUB
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                DEVOPS
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/723x403"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                DOCEKR
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                DEVOPS
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/723x403"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">SQL</h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                BACKEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/723x403"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                MYSQL
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                BBDD
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-2">
+            <div class="bg-white p-5 border-4 border-slate-900 rounded-lg">
+              <!-- <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://dummyimage.com/723x403"
+                alt="content"
+              /> -->
+              <h2 class="text-lg text-gray-900 font-medium title-font">
+                POSTGRESQL
+              </h2>
+              <h3
+                class="tracking-widest text-indigo-500 text-xs font-medium title-font mb-4"
+              >
+                FRONTEND
+              </h3>
+              <p class="leading-relaxed text-base"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experiencia-profesional" class="text-gray-600 body-font">
+      <div class="container p-5 sm:px-40 py-24 mx-auto">
+        <div class="flex flex-col">
+          <div class="h-1 bg-gray-200 rounded overflow-hidden">
+            <div class="w-24 h-full bg-indigo-500"></div>
+          </div>
+          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+            <h1
+              class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0"
+            >
+              Experiéncia profesional
+            </h1>
+            <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+              Esta combinación de habilidades y experiencias me capacita para
+              afrontar retos en el desarrollo y análisis de sistemas, asegurando
+              soluciones eficientes y adaptadas a los requerimientos del
+              proyecto. Busco un entorno colaborativo donde pueda seguir
+              creciendo y aportando mis conocimientos como Analista Programador
+              Junior.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap lg:grid lg:grid-flow-col lg:justify-stretch sm:-m-4 -mx-4 -mb-10 -mt-4"
+        >
+          <div class="p-5 sm:w-full sm:mb-0 mb-6 bg-gray-200">
+            <!-- <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="https://dummyimage.com/1203x503"
+              />
+            </div> -->
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              IndabaSoutions (Prácticas)
+            </h2>
+            <h3
+              class="tracking-widest text-sm title-font font-medium text-indigo-500 mt-2 mb-1"
+            >
+              INGENIERO DE SOFTWARE 2020 - 2023
+            </h3>
+            <p class="text-base leading-relaxed mt-2">
+              Durante mi práctica en IndabaSolutions (2020-2023) en Barcelona,
+              desarrollé soluciones tecnológicas para e-commerce B2B utilizando
+              Symfony y Pimcore (PHP). Integré el CMS de Pimcore con tecnologías
+              frontend como TWIG, HTML5, JavaScript (jQuery), CSS3 (Bootstrap),
+              y optimicé el rendimiento del código migrando de HTML5 a TWIG.
+              Implementé funcionalidades avanzadas en DataTables.js y desarrollé
+              sistemas de login y registro, además de impartir formaciones y
+              gestionar actualizaciones de software en equipo, utilizando
+              herramientas como Git, GitLab, Docker y Trello para una gestión
+              eficiente del desarrollo..
+            </p>
+            <!-- <a class="text-indigo-500 inline-flex items-center mt-3"
+              >Learn More
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a> -->
+          </div>
+          <div class="p-5 sm:full mb-6 bg-gray-200 sm:my-4 lg:my-0 lg:mx-4">
+            <!-- <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="https://dummyimage.com/1204x504"
+              />
+            </div> -->
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              Catalana Occidente (Prácticas)
+            </h2>
+            <h3
+              class="tracking-widest text-sm title-font font-medium text-indigo-500 mt-2 mb-1"
+            >
+              BUSINESS INTELLIGENCE 2018 -2019
+            </h3>
+            <p class="text-base leading-relaxed mt-2">
+              Durante mi contrato de prácticas en Catalana Occidente (septiembre
+              2018 - julio 2019) en Sant Cugat, trabajé como perfil junior en
+              Business Intelligence. Me encargué del mantenimiento de SAP DATA
+              SERVICES, la creación de informes en MicroStrategy, y la
+              automatización de procesos con Command Manager. También programé
+              en Java y SQL, utilizando SQL Server, y gestioné proyectos con
+              metodologías ágiles (SCRUM) y JIRA. Además, elaboré documentación
+              técnica, contribuyendo a la eficiencia y organización de los
+              proyectos
+            </p>
+            <!-- <a class="text-indigo-500 inline-flex items-center mt-3"
+              >Learn More
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a> -->
+          </div>
+          <div class="p-5 sm:w-full sm:mb-0 mb-6 bg-gray-200">
+            <!-- <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="https://dummyimage.com/1205x505"
+              />
+            </div> -->
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              TicGes (Prácticas)
+            </h2>
+            <h3
+              class="tracking-widest text-sm title-font font-medium text-indigo-500 mt-2 mb-1"
+            >
+              PORGRAMADOR FRONTEND 2016 - 2017
+            </h3>
+            <p class="text-base leading-relaxed mt-2">
+              Durante mi contrato de prácticas en TicGes (septiembre 2016 -
+              enero 2017) en Torelló, desempeñé funciones como programador
+              frontend y técnico informático, lo que me permitió desarrollar
+              habilidades en ambas áreas. En el ámbito de la programación
+              frontend, gestioné y mantuve contenido en el CMS WordPress,
+              realizando tareas como la instalación de plugins, la creación de
+              contenido y la optimización del sitio web para mejorar su
+              rendimiento y funcionalidad. Además, en mi rol de técnico
+              informático, me encargué del mantenimiento y reparación de
+              ordenadores, lo que me permitió adquirir sólidos conocimientos en
+              hardware y software. .
+            </p>
+            <!-- <a class="text-indigo-500 inline-flex items-center mt-3"
+              >Learn More
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos" class="bg-gray-100 text-gray-600 body-font py-20">
+      <div class="container px-5 sm:px-20 py-15 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+          >
+            Proyectos personales
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Estos proyectos destacan mi capacidad para aplicar conocimientos
+            técnicos y metodologías de desarrollo para crear soluciones
+            funcionales y eficientes, adaptadas a diferentes necesidades del
+            mercado. Busco seguir creciendo profesionalmente y contribuir con mi
+            experiencia en nuevos desafíos.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <!-- <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/600x360"
+              /> -->
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white"
+              >
+                <img alt="gallery" src="https://dummyimage.com/600x360" />
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-indigo-500 mt-5 mb-1"
+                >
+                  FRONTEND & BACKEND
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  ECOMMERCE BOUNCEMASTERS
+                </h1>
+                <p class="leading-relaxed">
+                  Para mi trabajo final de grado, realicé el análisis funcional,
+                  diseño e implementación de un eCommerce B2C especializado en
+                  la venta de pelotas de baloncesto. Utilicé diversas
+                  tecnologías y herramientas, incluyendo UML para el diseño,
+                  Symfony y plantillas TWIG para el desarrollo backend y
+                  frontend, Bootstrap y jQuery para la interfaz de usuario,
+                  Docker para la contenedorización y PostgreSQL como base de
+                  datos. Este proyecto integró múltiples componentes
+                  tecnológicos para crear una solución completa y funcional de
+                  comercio electrónico.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <!-- <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/600x360"
+              /> -->
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white"
+              >
+                <img alt="gallery" src="https://dummyimage.com/600x360" />
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-indigo-500 mt-5 mb-1"
+                >
+                  FRONTEND & BACKEND
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  VIDEO STREAMING APP
+                </h1>
+                <p class="leading-relaxed">
+                  Descripción: Desarrollé una aplicación innovadora para la
+                  reproducción de videos en streaming utilizando Python,
+                  destinada a proporcionar una experiencia de visualización
+                  fluida y de alta calidad a los usuarios. El sistema permite la
+                  reproducción de contenido de video en tiempo real, asegurando
+                  una baja latencia y un rendimiento optimizado. Tecnologías y
+                  Herramientas: Python, Protocolos TCP y UDP. Características:
+                  Implementación de protocolos TCP para gestionar de manera
+                  eficiente las acciones críticas como Play y Stop, asegurando
+                  que los comandos de control sean entregados y procesados
+                  correctamente. Uso de UDP para la transferencia de video en
+                  tiempo real, aprovechando su baja latencia y eficiencia en la
+                  transmisión de datos, lo cual es crucial para mantener una
+                  reproducción continua y sin interrupciones.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <!-- <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/600x360"
+              /> -->
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white"
+              >
+                <img alt="gallery" src="https://dummyimage.com/600x360" />
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-indigo-500 mt-5 mb-1"
+                >
+                  FRONTEND & BACKEND
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  MULTIPLAYER BATTLESHIP GAME
+                </h1>
+                <p class="leading-relaxed">
+                  Descripción: Desarrollé una versión multijugador del clásico
+                  juego Hundir la Flota, utilizando Python y sockets para
+                  permitir la comunicación entre usuarios en una red local o a
+                  través de internet. Este proyecto combina elementos de
+                  programación de redes y desarrollo de juegos. Tecnologías y
+                  Herramientas: Python, Sockets. Características: Comunicación
+                  en tiempo real entre jugadores, gestionada mediante sockets,
+                  permitiendo partidas fluidas. Diseño de interfaz gráfica
+                  simple pero efectiva para la colocación de barcos y
+                  lanzamiento de ataques. Implementación de lógica de juego para
+                  verificar impactos y hundimientos, así como la gestión de
+                  turnos de los jugadores.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <!-- <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/600x360"
+              /> -->
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white"
+              >
+                <img alt="gallery" src="https://dummyimage.com/600x360" />
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-indigo-500 mt-5 mb-1"
+                >
+                  FRONTEND & BACKEND
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  ARCADE AIRPLANE GAME
+                </h1>
+                <p class="leading-relaxed">
+                  Descripción: Creé un emocionante juego de batalla de aviones
+                  utilizando Java, implementando varios patrones de diseño para
+                  mejorar la estructura y flexibilidad del código. El juego
+                  ofrece una experiencia de combate aérea con controles
+                  intuitivos. Tecnologías y Herramientas: Java, Patrones de
+                  Diseño (Singleton, State). Características: Uso del patrón
+                  Singleton para la gestión de recursos y configuración del
+                  juego, asegurando una instancia única y centralizada.
+                  Implementación del patrón State para gestionar los diferentes
+                  estados del juego, como el menú principal, el juego en curso,
+                  y la pantalla de fin de juego.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <!-- <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/600x360"
+              /> -->
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white"
+              >
+                <img alt="gallery" src="https://dummyimage.com/600x360" />
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-indigo-500 mt-5 mb-1"
+                >
+                  FRONTEND & BACKEND
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  BLOG COMMENT ANALYSIS AI PROJECT
+                </h1>
+                <p class="leading-relaxed">
+                  Descripción: Desarrollé una aplicación RESTful en Node.js
+                  dedicada al análisis de comentarios en blogs, utilizando
+                  tecnologías de inteligencia artificial proporcionadas por
+                  Google para comprender y evaluar las opiniones y sentimientos
+                  expresados en los comentarios de los usuarios. El proyecto se
+                  centra en ofrecer insights valiosos que pueden ayudar a los
+                  administradores del blog a mejorar el contenido y la
+                  interacción con los lectores. Tecnologías y Herramientas:
+                  Node.js, Servicios de IA de Google, Chart.js. Características:
+                  Integración de servicios de IA de Google para realizar
+                  análisis de sentimiento, detección de spam y categorización de
+                  temas en los comentarios. Desarrollo de una API RESTful que
+                  permite la fácil integración y uso del sistema de análisis
+                  desde diferentes aplicaciones y plataformas. Visualización de
+                  resultados mediante Chart.js, proporcionando gráficos
+                  interactivos y fáciles de entender que muestran tendencias y
+                  patrones en los comentarios. Interfaz de usuario intuitiva
+                  para revisar y gestionar los resultados del análisis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <!-- <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/600x360"
+              /> -->
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white"
+              >
+                <img alt="gallery" src="https://dummyimage.com/600x360" />
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-indigo-500 mt-5 mb-1"
+                >
+                  BUSINESS INTELLIGENCE
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  BUSINESS INTELLIGENCE & DATA MINING PROJECT
+                </h1>
+                <p class="leading-relaxed">
+                  Descripción: Desarrollé un sistema de análisis de datos
+                  utilizando herramientas de Business Intelligence y minería de
+                  datos de Microsoft. El proyecto se centra en la extracción,
+                  transformación y visualización de datos para apoyar la toma de
+                  decisiones estratégicas en una organización. Tecnologías y
+                  Herramientas: Power BI, SQL Server Integration Services
+                  (SSIS). Características: Creación de procesos ETL (Extracción,
+                  Transformación y Carga) con SSIS para consolidar datos de
+                  múltiples fuentes en un almacén de datos centralizado.
+                  Desarrollo de dashboards interactivos y reportes detallados en
+                  Power BI, proporcionando visualizaciones claras y útiles para
+                  la toma de decisiones.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-700 text-white body-font">
+      <div
+        class="container px-10 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <!-- <a
+          class="flex title-font font-medium items-center md:justify-start justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">Sergi García Jiménez</span>
+        </a> -->
+        <p
+          class="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2024 Portafolio —
+          <a
+            href="https://www.linkedin.com/in/sergi-garcía-jiménez"
+            class="text-gray-100 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+            >@SergiGarcia</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a
+            class="ml-3 text-gray-100"
+            href="https://www.linkedin.com/in/sergi-garcía-jiménez"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.75 20h-3.5v-11h3.5v11zm-1.75-12.268c-1.151 0-2.082-.934-2.082-2.082 0-1.147.932-2.082 2.082-2.082s2.082.935 2.082 2.082c0 1.148-.932 2.082-2.082 2.082zm13.75 12.268h-3.5v-5.5c0-1.308-.026-2.992-1.825-2.992-1.826 0-2.104 1.432-2.104 2.908v5.584h-3.5v-11h3.361v1.507h.048c.469-.889 1.613-1.825 3.321-1.825 3.551 0 4.204 2.34 4.204 5.382v6.936z"
+              />
+            </svg>
+          </a>
+          <a
+            class="ml-3 text-gray-100"
+            href="https://www.github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.091-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.398 3.005-.403 1.022.005 2.048.137 3.006.403 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.803 5.625-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.896-.014 3.292 0 .322.218.694.825.576 4.765-1.587 8.2-6.085 8.2-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
